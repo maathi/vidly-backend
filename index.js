@@ -26,9 +26,9 @@ var schema = buildSchema(`
 
 var app = express()
 
-app.use(cors())
+// app.use(cors())
 app.use(express.json())
-// app.use(express.urlencoded())
+app.use(express.urlencoded())
 
 app.get("/", function (req, res, next) {
   res.json({ msg: "tat works fine" })
