@@ -15,7 +15,7 @@ let movies = [
   },
   {
     id: 3,
-    title: "hana is very funny",
+    title: "Hannah is very funny",
     genre: { id: "ccc", name: "comedy" },
     stock: 2,
     rate: 9.5,
