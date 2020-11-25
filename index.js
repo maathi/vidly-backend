@@ -2,7 +2,7 @@ var express = require("express")
 var { graphqlHTTP } = require("express-graphql")
 var { buildSchema } = require("graphql")
 var resolver = require("./resolvers")
-var cors = require("cors")
+// var cors = require("cors")
 
 // Construct a schema, using GraphQL schema language
 var schema = buildSchema(`
@@ -28,7 +28,7 @@ var app = express()
 
 app.use(cors())
 app.use(express.json())
-app.use(express.urlencoded())
+// app.use(express.urlencoded())
 
 app.get("/", function (req, res, next) {
   res.json({ msg: "tat works fine" })
